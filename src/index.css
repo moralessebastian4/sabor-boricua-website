@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-ink antialiased transition-colors duration-300 dark:bg-ink dark:text-white;
+  }
+
+  ::selection {
+    @apply bg-teal text-ink;
+  }
+}
+
+@layer components {
+  .container-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+
+  .section-space {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply mb-4 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-electric dark:text-teal;
+  }
+
+  .eyebrow::before {
+    content: "";
+    @apply h-px w-7 bg-current;
+  }
+
+  .display-title {
+    @apply font-display text-4xl font-extrabold leading-[1.05] tracking-[-0.045em] sm:text-5xl lg:text-6xl;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-extrabold leading-tight tracking-[-0.035em] sm:text-4xl lg:text-5xl;
+  }
+
+  .body-copy {
+    @apply text-base leading-7 text-slate-600 dark:text-slate-300 sm:text-lg;
+  }
+
+  .card {
+    @apply rounded-3xl border border-slate-200 bg-white shadow-card transition-colors dark:border-white/10 dark:bg-white/[0.04];
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-sm text-ink outline-none transition placeholder:text-slate-400 focus:border-electric focus:ring-4 focus:ring-electric/10 dark:border-white/10 dark:bg-white/5 dark:text-white;
+  }
+}
+
+.hero-grid {
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 88%);
+}
+
+.gradient-text {
+  background: linear-gradient(100deg, #ffffff 12%, #8ff8e5 52%, #79aaf5 92%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.noise::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+}
