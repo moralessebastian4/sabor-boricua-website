@@ -4,7 +4,7 @@ A responsive five-page service website for Morales Digital CT, built with React,
 
 ## Official links
 
-- Website: [morales-digital-ct.vercel.app](https://morales-digital-ct.vercel.app)
+- Website: [moralesdigitalct.com](https://moralesdigitalct.com)
 - GitHub: [moralessebastian4/morales-digital-ct](https://github.com/moralessebastian4/morales-digital-ct)
 
 ## Local setup
