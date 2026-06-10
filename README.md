@@ -45,7 +45,7 @@ Pushing to the `main` branch automatically creates a production deployment.
 - Colors and typography: `tailwind.config.js` and `src/index.css`
 - Portfolio images: `public/images`
 
-Business phone, email, and Instagram details are stored in `src/data/contact.js`. The quote form opens the visitor's email app and addresses the request to `sebastianmorales.ct@gmail.com`.
+Business phone, email, and Instagram details are stored in `src/data/contact.js`. The quote form opens the visitor's email app and addresses the request to `sebastianmoralesct@gmail.com`.
 
 ## Notes
 
