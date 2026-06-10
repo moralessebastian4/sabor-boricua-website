@@ -37,6 +37,10 @@ This repository is connected to the Vercel project named `morales-digital-ct`.
 
 Pushing to the `main` branch automatically creates a production deployment.
 
+The purchased domain `moralesdigitalct.com` is the canonical public URL.
+`www.moralesdigitalct.com` and Vercel-generated `.vercel.app` hostnames redirect
+to it while preserving the requested page path.
+
 ## Easy edits
 
 - Main content and package details: `src/data/siteData.js`
